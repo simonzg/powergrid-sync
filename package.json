@@ -1,0 +1,38 @@
+{
+   "name": "powergrid-sync",
+   "version": "0.0.1",
+   "description": "Collect blocks/txs/metrics from meter network",
+   "license": "MIT",
+   "readmeFilename": "README.md",
+   "author": {
+      "name": "Simon Zhang",
+      "email": "zhanghan.simon@gmail.com"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/simonzg/powergrid-sync.git"
+   },
+   "bugs": {
+      "url": "https://github.com/typeorm/powergrid-sync/issues"
+   },
+   "tags": [
+      "typescript",
+      "meter",
+      "sync"
+   ],
+   "devDependencies": {
+      "@types/node": "^12.6.8",
+      "ts-node": "^3.3.0",
+      "typescript": "^3.9.3"
+   },
+   "dependencies": {
+      "mysql2": "^2.1.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.25"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "typeorm": "ts-node ./node_modules/.bin/typeorm",
+      "build": "rm -fr dist && tsc -p ."
+   }
+}
